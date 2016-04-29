@@ -1,0 +1,6 @@
+[submodule "HedgehogLightFirmware"]
+	path = HedgehogLightFirmware
+	url = https://github.com/PRIArobotics/HedgehogLightFirmware.git
+[submodule "HedgehogHWCFlasher"]
+	path = HedgehogHWCFlasher
+	url = https://github.com/PRIArobotics/HedgehogHWCFlasher.git
