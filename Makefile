@@ -27,8 +27,8 @@ clean:
 	cd $(PROJ_NAME) && make clean
 
 # flash the firmware from the bundled project
-flash: $(PROJ_NAME)/$(BUILDDIR)/$(PROJ_NAME).bin
-	. env/bin/activate && hedgehog-hwc-flasher $(PROJ_NAME)/$(BUILDDIR)/$(PROJ_NAME).bin
+flash:
+	. env/bin/activate && cd $(PROJ_NAME) && make flash
 
 # flash a binary from /tmp/$(PROJ_NAME).bin that was put there by someone else
 flash-tmp:
