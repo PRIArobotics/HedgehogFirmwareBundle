@@ -4,7 +4,7 @@ PROJ_NAME = HedgehogLightFirmware
 #directory for binary output files
 BUILDDIR := build
 
-.PHONY: all env clean-env clean flash
+.PHONY: all env clean-env clean flash flash-tmp
 
 # build the firmware in the bundled project
 all: $(PROJ_NAME)/$(BUILDDIR)/$(PROJ_NAME).bin
