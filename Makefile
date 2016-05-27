@@ -12,6 +12,7 @@ all: $(PROJ_NAME)/$(BUILDDIR)/$(PROJ_NAME).bin
 # set up the python environment for the HWC Flasher
 env:
 	python3 -m virtualenv env
+	. env/bin/activate && pip install -e HedgehogPeriphery
 	. env/bin/activate && pip install -e HedgehogHWCFlasher
 
 # clean up the python environment for the HWC Flasher
